@@ -19,6 +19,7 @@ public class Player extends Actor
     {
         moveAround();
         checkFalling();
+        collect();
     }
     private void fall()
     {
@@ -27,14 +28,6 @@ public class Player extends Actor
     }
     public void moveAround()
     {
-        if(Greenfoot.isKeyDown("right"))
-        {
-            move(4);
-        }
-        if(Greenfoot.isKeyDown("left"))
-        {
-            move(-4);
-        }
         if(Greenfoot.isKeyDown("space")&&(onGround()==true)) 
         {
             vSpeed = jumpHeight;
@@ -56,6 +49,14 @@ public class Player extends Actor
         if (onGround()== true)
         {
             vSpeed = 0;
+        }
+    }
+    public void collect()
+    {
+        Actor coin = getOneIntersectingObject(Coin.class);
+        if (coin!=null)
+        {
+            getWorld().removeObject(coin);
         }
     }
 }

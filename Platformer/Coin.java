@@ -1,19 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Ground here.
+ * Write a description of class Coin here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Ground extends Actor
+public class Coin extends Actor
 {
-    public Ground()
-    {
-       getImage().scale(getImage().getWidth()*6,getImage().getHeight()*2);   
-    }
     /**
-     * Act - do whatever the Ground wants to do. This method is called whenever
+     * Act - do whatever the Coin wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
@@ -28,7 +24,7 @@ public class Ground extends Actor
         }
         if(getX()==0)
         {
-            setLocation(getWorld().getWidth()-1,Greenfoot.getRandomNumber(350)+350);
+            getWorld().removeObject(this);
         }
     }
 }
