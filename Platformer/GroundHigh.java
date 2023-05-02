@@ -1,14 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Ground here.
+ * Write a description of class GroundHigh here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Ground extends Actor
+public class GroundHigh extends Actor
 {
-    public Ground()
+    public GroundHigh()
     {
        getImage().scale(getImage().getWidth()*6,getImage().getHeight()*2);   
     }
@@ -28,7 +28,7 @@ public class Ground extends Actor
         }
         if(getX()==0)
         {
-            setLocation(getWorld().getWidth()-1,Greenfoot.getRandomNumber(100)+612);
+            setLocation(getWorld().getWidth()-1,Greenfoot.getRandomNumber(100)+350);
         }
     }
 }
