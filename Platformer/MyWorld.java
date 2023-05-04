@@ -158,5 +158,21 @@ public class MyWorld extends World
         groundHigh8.setLocation(1843,415);
         groundMid5.setLocation(1804,569);
         player.setLocation(139,683);
+        groundHigh8.setLocation(1811,343);
+        groundHigh8.setLocation(1847,335);
+        groundHigh8.setLocation(1730,328);
+        groundHigh8.setLocation(1720,332);
+        groundHigh8.setLocation(1847,331);
+        groundHigh8.setLocation(1842,332);
+        groundHigh8.setLocation(1806,330);
+        groundHigh8.setLocation(1819,330);
+        groundHigh8.setLocation(1836,336);
+        groundHigh8.setLocation(1849,340);
+        groundHigh8.setLocation(1890,364);
+        groundHigh8.setLocation(1905,396);
+        groundHigh8.setLocation(1854,424);
+        groundHigh8.setLocation(1876,456);
+        groundHigh8.setLocation(1839,420);
+        groundHigh8.setLocation(1837,436);
     }
 }

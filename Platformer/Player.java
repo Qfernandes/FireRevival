@@ -12,6 +12,7 @@ public class Player extends Actor
     private int acceleration = 1;
     private int jumpHeight= -20;
     private int collect=0;
+    boolean TenCoinsCollected = false;
     /**
      * Act - do whatever the Player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -21,6 +22,7 @@ public class Player extends Actor
         moveAround();
         checkFalling();
         collect();
+        
     }
     private void fall()
     {
@@ -82,9 +84,10 @@ public class Player extends Actor
             getWorld().removeObject(coin);
             collect++;
         }
-        if(collect==10)
+        if(collect==10 && TenCoinsCollected==false)
         {
             getWorld().addObject(new SecretDoor(), 1950, 450);
+            TenCoinsCollected = true;
         }
     }
 }
