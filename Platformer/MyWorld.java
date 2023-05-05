@@ -174,5 +174,8 @@ public class MyWorld extends World
         groundHigh8.setLocation(1876,456);
         groundHigh8.setLocation(1839,420);
         groundHigh8.setLocation(1837,436);
+        player.setLocation(139,682);
+        Projectile projectile = new Projectile();
+        addObject(projectile,139,682);
     }
 }
