@@ -10,7 +10,7 @@ public class Ground extends Actor
 {
     public Ground()
     {
-       getImage().scale(getImage().getWidth()*6,getImage().getHeight()*2);   
+       getImage().scale(getImage().getWidth()*9,getImage().getHeight()*2);   
     }
     /**
      * Act - do whatever the Ground wants to do. This method is called whenever

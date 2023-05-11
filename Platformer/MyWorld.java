@@ -38,20 +38,8 @@ public class MyWorld extends World
         Player player = new Player();
         addObject(player,49,655);
         player.setLocation(49,659);
-        Cloud cloud = new Cloud();
-        addObject(cloud,112,32);
-        cloud.setLocation(134,50);
-        Cloud cloud2 = new Cloud();
-        addObject(cloud2,289,135);
-        cloud2.setLocation(315,173);
-        Cloud cloud3 = new Cloud();
-        addObject(cloud3,475,71);
-        Cloud cloud4 = new Cloud();
-        addObject(cloud4,713,163);
-        Cloud cloud5 = new Cloud();
-        addObject(cloud5,806,61);
-        cloud5.setLocation(843,57);
-        cloud4.setLocation(668,187);
+        
+       
 
         player.setLocation(139,631);
 
@@ -60,10 +48,7 @@ public class MyWorld extends World
         player.setLocation(75,665);
         player.setLocation(70,648);
 
-        cloud5.setLocation(1176,77);
-        cloud5.setLocation(1124,95);
-        cloud4.setLocation(840,188);
-        cloud3.setLocation(592,92);
+       
         player.setLocation(151,659);
 
         Coin coin = new Coin();
