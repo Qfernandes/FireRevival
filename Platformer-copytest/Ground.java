@@ -1,10 +1,9 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import greenfoot.*;
 /**
- * Write a description of class Ground here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * This class is where the Ground is created for the player to move, jump on.
+* @Quincy
+ * @Shakthy
+ * @version1
  */
 public class Ground extends Actor
 {
@@ -12,10 +11,6 @@ public class Ground extends Actor
     {
        getImage().scale(getImage().getWidth()*8,getImage().getHeight()*4);   
     }
-    /**
-     * Act - do whatever the Ground wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act()
     {
         if(Greenfoot.isKeyDown("right"))

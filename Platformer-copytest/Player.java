@@ -1,10 +1,10 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import greenfoot.*;
 /**
- * Write a description of class Player here.
+ * In this class, player is created and player is able to fire projectiles, manoeuvre and collect coins.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Quincy
+ * @Shakthy
+ * @version1
  */
 public class Player extends Actor
 {
@@ -12,9 +12,9 @@ public class Player extends Actor
     private int acceleration = 1;
     private int jumpHeight= -20;
     int speed = 3;
+    int time = 0;
     /**
-     * Act - do whatever the Player wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * In the act method, the player can able to move, fall, collect coins, fire projeciles to the enemy.
      */
     public void act()
     {
@@ -22,9 +22,11 @@ public class Player extends Actor
         checkFalling();
         collect();
         fireProjectile();
-        //just added
+
         turnAround();
         moveAround();
+        time++;
+        hitByEnemy();
     }
     public void fireProjectile()
     {
@@ -80,10 +82,10 @@ public class Player extends Actor
         {
             getWorld().removeObject(coin);
         }
+  
     }
-        public boolean hitByEnemy()
+   public boolean hitByEnemy()
     {
-    //when the enemy class is directly on top of the player the offset is 0,0
     Actor enemy = getOneObjectAtOffset(0,0,Enemy.class);
     if(enemy!=null)
     
@@ -92,6 +94,6 @@ public class Player extends Actor
     }
     else
     return false;
-}
+    }
 
 }

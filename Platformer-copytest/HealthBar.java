@@ -1,20 +1,18 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import greenfoot.*;
 /**
- * Write a description of class HealthBar here.
+ * Created the Health bar in this class, so the player can see their health
+
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Quincy
+ * @Shakthy
+ * @version1
  */
-//Create HealthBar sub class
 public class HealthBar extends Actor
 {
     /**
-     * Act - do whatever the HealthBar wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * The health bar is created and displays above the player. The health bar will reduces when the enemy hits on the player.
      */
     int health = 50;
-    //This where health bar is created and displayed on the screem the health bar is rectangle and the health is set to red
     public HealthBar()
     {
         setImage(new GreenfootImage(52, 12));
@@ -31,26 +29,25 @@ public class HealthBar extends Actor
         getImage().fillRect(1,1,health,10);
         World world = getWorld();
         MyWorld myWorld = (MyWorld)world;
-        //sets the health bar location
         setLocation(myWorld.getPlayer().getX()-5, myWorld.getPlayer().getY()-50);
         loseHealth();
     }
+    /**
+     * This loseHealth method is when the enemy hits the player, the health bar reduces
+     * If all health bar is lost, the game is over and the end screen will display.
+     */
     public void loseHealth()
     {
-        //access the World with get player
         World world = getWorld();
         MyWorld myWorld = (MyWorld)world;
-        //if - get player from my world (returns main player), hit by enemy is true will mean health--
         if(myWorld.getPlayer().hitByEnemy())
         {
             health--;
         }
-        //displays once lost showing time in seconds how long you survived
-        //if health is less than or = 0 then you lose
         if(health<=0)
         {
-            //Greenfoot.stop means to stop the game once you lost and the lost screen is displayed
           Greenfoot.stop();
+          getWorld().showText("Game Over...you survived for " + (myWorld.getPlayer().time/60) + "seconds", getWorld().getWidth()/2, getWorld().getHeight()/2);
         }
 }
 }

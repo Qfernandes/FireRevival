@@ -1,10 +1,11 @@
 #BlueJ class context
 comment0.target=HealthBar
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ HealthBar\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Created\ the\ Health\ bar\ in\ this\ class,\ so\ the\ player\ can\ see\ their\ health\r\n\r\n\ \r\n\ @Quincy\r\n\ @Shakthy\r\n\ @version1\r\n
 comment1.params=
 comment1.target=HealthBar()
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ loseHealth()
+comment3.text=\r\n\ This\ loseHealth\ method\ is\ when\ the\ enemy\ hits\ the\ player,\ the\ health\ bar\ reduces\r\n\ If\ all\ health\ bar\ is\ lost,\ the\ game\ is\ over\ and\ the\ end\ screen\ will\ display.\r\n
 numComments=4

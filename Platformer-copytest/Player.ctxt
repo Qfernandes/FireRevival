@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Player
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Player\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ In\ this\ class,\ player\ is\ created\ and\ player\ is\ able\ to\ fire\ projectiles,\ manoeuvre\ and\ collect\ coins.\r\n\ \r\n\ @Quincy\r\n\ @Shakthy\r\n\ @version1\r\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Player\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.text=\r\n\ In\ the\ act\ method,\ the\ player\ can\ able\ to\ move,\ fall,\ collect\ coins,\ fire\ projeciles\ to\ the\ enemy.\r\n
 comment2.params=
 comment2.target=void\ fireProjectile()
 comment3.params=

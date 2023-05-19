@@ -1,16 +1,15 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import greenfoot.*;
 /**
- * Write a description of class Projectile here.
+ * Created Projectiles class, so the player able to fire projectiles at the enemies
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Quincy
+ * @Shakthy
+ * @version1
  */
 public class Projectile extends Actor
 {
     /**
-     * Act - do whatever the Projectile wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * The Projectile is created, and created an act method to remove enemies when the projectiles interesect to the enemies.
      */
     
     int speed = 10;   

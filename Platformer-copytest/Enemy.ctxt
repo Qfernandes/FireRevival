@@ -1,14 +1,17 @@
 #BlueJ class context
 comment0.target=Enemy
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Enemy\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ Enemy\ class\ is\ where\ we\ created\ the\ enemy,\ and\ can\ access\ the\ player\ and\ counter\ class\r\n\ \r\n\ @Quincy\r\n\ @Shakthy\r\n\ @version1\r\n
 comment1.params=mainPlayer\ counter
 comment1.target=Enemy(Player,\ Counter)
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ animate()
+comment3.text=\r\n\ Created\ an\ animate\ method\ to\ animate\ the\ enemy.\r\n
 comment4.params=
 comment4.target=void\ moveAround()
+comment4.text=\r\n\ The\ moveAround\ method\ follows\ the\ player\r\n
 comment5.params=
 comment5.target=void\ hitByProjectile()
+comment5.text=\r\n\ The\ hitByProjectile\ method\ is\ when\ the\ projectile\ hits\ the\ enemy,\ it\ removes\ the\ enemy\r\n
 numComments=6

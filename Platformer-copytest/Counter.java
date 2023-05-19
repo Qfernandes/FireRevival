@@ -1,24 +1,22 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import greenfoot.*;
 /**
- * Write a description of class Counter here.
+ * This class is where the counter is created.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+* @Quincy
+ * @Shakthy
+ * @version1
  */
 // Create Counter class 
 public class Counter extends Actor
 {
     /**
-     * Act - do whatever the Counter wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Variables are created and created an counter to see the score, cash and time
      */
     int score;
     int money;
     int time;
     public Counter()
     {
-        //created a score and cash counter so users can see how much they collected
         setImage(new GreenfootImage("Score: " + score + "\n Cash: " + money + "\n Time: " + time/60, 40, Color.BLACK, new Color(0,0,0,0)));
         
     }
@@ -26,6 +24,5 @@ public class Counter extends Actor
     {
         time++;
         setImage(new GreenfootImage("Score: " + score + "\n Cash: " + money + "\n Time: " + time/60 , 40, Color.BLACK, new Color(0,0,0,0)));
-
     }
 }
